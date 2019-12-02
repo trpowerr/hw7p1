@@ -22,6 +22,19 @@ function giveTypePerson (type) {
   }
 }
 
-const ourHero = createPerson('Misha', 'Daemon')
+function unitDamageDefence (type) {
+  const obj = [
+    {type: 'Bowman', health: 100, level: 1, attack: 25, defence: 25},
+    {type: 'Swordsman', health: 100, level: 1, attack: 40, defence: 10},
+    {type: 'Magician', health: 100, level: 1, attack: 10, defence: 40},
+    {type: 'Daemon', health: 100, level: 1, attack: 25, defence: 25},
+    {type: 'Undead', health: 100, level: 1, attack: 40, defence: 10},
+    {type: 'Zombie', health: 100, level: 1, attack: 10, defence: 40},
+  ];
+
+  
+}
+
+const ourHero = createPerson('MIsha', 'Daemon')
 
 console.log(ourHero);
