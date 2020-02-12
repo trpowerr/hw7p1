@@ -1,4 +1,4 @@
-function createPerson (name, type) {
+export function createPerson (name, type) {
   if ( name.length > 2 && name.length < 10 && findBy('type', type) != undefined) {
     const person = {
       name,
@@ -29,6 +29,4 @@ function findBy (key,value) {
   return results.find( ({ [key]: val }) => val === value);
 }
 
-const ourHero = createPerson('Masha', 'Undead')
-
-console.log(ourHero);
+export const ourHero = createPerson('Masha', 'Undead');
