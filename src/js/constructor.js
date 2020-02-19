@@ -11,7 +11,7 @@ export function createPerson (name, type) {
     return obj;
 
   } else {
-    throw new Error('Wait, my boy, you are crazy?')
+    throw new Error('Неверный формат ввода!')
   }
   
 }
