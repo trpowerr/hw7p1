@@ -22,6 +22,8 @@ test('should introduce correct healthpoint', () => {
   expect(received).toBe(expected);
 });
 
-test('should throw Error Неверный формат ввода', () => {
-  expect(createPerson('Mashaffffffff', 'Undead')).toThrow(new Error('Неверный формат ввода!'));
+test('should throw Error Неверный формат ввода', () => { 
+  expect(() => { createPerson('Mashaffffffff', 'Undead'); }).toThrow(new Error('Неверный формат ввода!'));
 });
+
+
